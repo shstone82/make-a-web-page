@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<title>Shannon's introduction to coding</title>
+	</head>
+	<body>
+		<h1 class="title">Shannon's Introduction to Coding</h1>
+		<div class="app">
+			<div class="image"><img src="image/joshandjonahapr2015.jpg" alt="joshandjonah"></div>
+			<div class="bodytext">
+
+						<h2 class="lesson">Lesson 1.1: The Basics of the Web and HTML</h2>
+
+						<div class="text">
+							<p>The World Wide Web is a collection of HTML documents. The browser on your computer makes requests to servers. Servers are computers that host the files that make up the web. They communicate using HTTP, the main protocol of the web.</p>
+
+							<p><b>HTML</b> stands for <em>Hyper Text Markup Language</em>. HTML consists of the <em>text</em> or content of the page, the <em> markup</em> or what it looks like/how it's arranged, <em>references</em> to other documents such as images or videos, and lastly <em>links</em> to other pages on the internet. For example, here is a link to the <a href="https://www.udacity.com/courses/all"> Udacity Course Catalog.</a></p>
+	  
+							<p>In Lesson 1 we learned a lot about different <em>tags</em> and their <em>attributes</em>. Tags are usually made up of opening and closing tags. <em>Void tags</em>, however, do not need a closing tag as they do not contain content. Examples of void tags include the  br   tag. It's a good idea to make your closing tags as soon as you have typed your opening tags. If you forget, the computer won't know to fix your mistake and the webpage will not display correctly.</p>
+
+							<p>We also learned about the difference between <em>inline</em> and <em>block</em> elements.
+						</div> 
+
+						<h2 class="lesson">Lesson 1.2: Creating A Structured Document</h2>
+
+						<div class="text">
+							<p>How do you translate a visual design into code? If a website were a house, HTML would be it's architecture, CSS the decoration, and JavaScript the interactive elements.</p>
+						</div>
+
+						<div class="techtip">Top Tip: We learned how to use developer tools in Google Chrome. By clicking on the HTML in the left panel, you can find the style info for that line of HTML in the CSS panel on the right.</div>
+
+						<div class="text">
+							<p>Examining a simple webpage with Google Chrome's developer tools, we learned about the <em>tree like structure of HTML</em>. This can also be referred to as the <em>Document Object Model</em> of a webpage. Every triangle we see in the developer tools is an HTML element. A wave of changing indentations up and down corresponds to how deeply nested it is within the webpage.</p>
+
+							<p>Everything on a webpage is a box. Thinking about webpages in terms of boxes makes it easy to rearrange the webpage. Boxes can go inside other boxes. You can <em>boxify</em> the design. When you are designing a webpage, start with the biggest boxes and work your way down to the smallest boxes. <b>Each box requires a div tag.</b></p>
+
+							<p>Udacity recommends using Sublime Text 2 as our text editing program. Scratchpad is a program for beginners that has few features and is best for smaller projects. Codepen is for intermediate users but is not as powerful as Sublime Text 2. We should try not to use Notepad because it's not designed for writing computer code.</p> 
+						</div>
+
+						<h2 class="lesson">Lesson 1.3: Adding CSS Style and HTML Structure</h2>
+
+						<div class="text">
+							<p>An essential best practice in writing code is to avoid repetition by using CSS. CSS stands for Cascading Style Sheets. There can be several CSS files for a single HTML file. It's similar to having national, state, and municipal laws. However, the "cascading" in Cascading Style Sheets means that the most specific rule applies to an element.</p>
+
+							<p>The idea of cascading requires an understanding of the concept of inheritance. According to <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets">Wikipedia</a>, inheritance is a central feature of CSS relying on "the ancester-descendant relationship" to operate. Inheritance relies on the tree-like structure of HTML or a page based on nesting. Descendent elements may inherit CSS property values from any ancester enclosing them. Descendent elements inherit text-related properties but box related properties are not inherited.</p>
+
+							<p>Properties that can be inherited include color, font, letter-spacing, line-height, list-style, text-align, text-indent, text-transform, visibility, white-space, and word-spacing.  Properties that can not be inherited include background, border, display, float and clear, height and width, margin, min- and max- height and width, outline, overflow, padding, position, text-decoration, vertical-align, and z-index. Inheritance prevents certain properties from having to be written over and over again so programmers can write less CSS and results in web pages loading faster and enabling clients to save on bandwidth and development costs.</p>
+						</div>
+
+						<div class="techtip"> Top Tip: A common way to format CSS for readability is to indent each property and give it a line of its own. This symbol /* is for a CSS comment. It's for people to read; the computer ignores it. Ends as */</div>
+
+						<div class="text">
+							<p>There are three ways to write CSS into your web page:</p>
+								<ol> 
+									<li>Write CSS in the head of your HTML (best for small projects)</li>
+									<li>Save your HTML file and CSS file in the same folder, add a link tag in the head element of your HTML file.</li>
+									<li>Write style inline with your HTML- not recommended!</li>
+								</ol>
+
+							<p> We were shown some CSS examples using selectors and class selectors and some of the numerous possible properties and their values that could be applied to them. We learned how to adjust the properties in Developer Tools in Chrome to make potential changes to our code.</p>
+						</div>
+
+						<div class="techtip"> Top Tip: It's a good idea to use the header divs such as H1 because search engines use the headers to index and structure the content of the web page.</div>
+
+						<div class="text">
+							<p>We learned more about the Box Model. Content is surrounded by padding, which is surrounded by the border, which is surrounded by the margin. Padding clears the area around content and is affected by the background color. The border color is inherited from the color of the box. The margin has no background color and can be thought of as the space between boxes. We computed the width of boxes in pixels using developer tools. It's easier to make layouts using the box-sizing property in CSS. This property tells the browser what should be included when determining the size of the box, such as border, padding, and content. No matter how much you tweak the border and padding of a box, the box size will remain the same. Margin is not included.</p>
+
+							<p>{<br>
+							box-sizing:border-box;<br>
+							}
+							</p>
+
+							<p>However, this CSS property needs browser specific pre-fixes to work in all browsers.
+							<br>
+							{-webkit-box-sizing:border-box;<br>
+							-moz-box-sizing:border-box;<br>
+							-ms-box-sizing:border-box;<br>
+							box-sizing:border-box;<br>}
+							</p>
+
+							<p>You can set the size of a box to a pixel or a percentage. If set to a percentage, the box will change depending on the size of a user's screen, which is really helpful to the user. How do you change the size of the box to a percentage? Within HTML set the style within the div to a height and width of 50%.</p> 
+
+							<p> Positioning boxes. One powerful method for positioning boxes within CSS is to use the <em>flex box layout</em>. If you want several boxes next to each other, change the display attribute of the parent div to flex. Items within the div have to be smaller than the default 100% for this to work.</p>
+
+							<p> Adding images. Make a new folder called images in the HTML project folder. In the HTML code insert a div for the image and reference the file's location within it using the img src tag.</p>
+
+							<p> Code, Test, Refine. When designing a webpage, think about how to boxify the information. Look for repeated styles and semantic elements. Then write the HTML and apply styles, starting from the biggest to the smallest elements. Then fix things.</p>
+						</div>
+			</div>
+		</div>
+	</body>
+</html>

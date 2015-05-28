@@ -1,0 +1,58 @@
+/* This is a CSS comment.*/
+
+body{
+	background-color:rgb(232,232,232);
+	font-family: helvetica;
+	padding:20px 10px;
+	max-width:2000px;
+}
+.app{
+	display:flex;
+}
+
+.title{
+	font-size:30px;
+	font-weight: bolder;
+	text-align:center;
+}
+
+.image{
+	display:flex;
+	max-width:280px;
+	max-height:350px;
+	padding:20px;
+	margin:20px;
+}
+
+.lesson{
+	background-color: white;
+	font-size: 16px;
+	font-weight:bold;
+	max-width:700px;
+	padding: 10px;
+	margin: 10px auto;
+
+}
+
+.text{
+	font-size:14px;
+	background-color: white;
+	max-width:700px;
+	padding: 10px;
+	margin: 10px auto;
+}
+
+.techtip{
+	border:3px;
+	border-radius: 10px;
+	border-style: dotted;
+	max-width:300px;
+	padding:10px;
+	font-weight:bold;
+	font-size:12px;
+}
+
+/*
+Comments are only to help PEOPLE read a code file. The
+computer ignores them.
+*/
